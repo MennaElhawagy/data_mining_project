@@ -1,0 +1,22 @@
+2026-05-21 08:09:12,972 | INFO | Log file: D:\Study\Data Mining\project\logs\dwh_pipeline_20260521_080912.log
+2026-05-21 08:09:12,974 | INFO | Project root: D:\Study\Data Mining\project
+2026-05-21 08:09:12,974 | INFO | Dataset dir: D:\Study\Data Mining\project\instacart_dataset
+2026-05-21 08:09:12,974 | INFO | Database: postgres@localhost:5432/instacart_dwh
+2026-05-21 08:09:12,974 | INFO | START connect to PostgreSQL
+2026-05-21 08:09:23,111 | INFO | DONE  connect to PostgreSQL in 10.14s
+2026-05-21 08:09:23,595 | INFO | public schema tables already exist; skipping schema.sql
+2026-05-21 08:09:23,596 | INFO | START create/update staging schema
+2026-05-21 08:09:24,119 | INFO | DONE  create/update staging schema in 0.52s
+2026-05-21 08:09:24,177 | INFO | Skipping CSV copy step
+2026-05-21 08:09:24,178 | INFO | START drop existing DWH helper indexes before ETL
+2026-05-21 08:09:24,221 | INFO | DONE  drop existing DWH helper indexes before ETL in 0.04s
+2026-05-21 08:09:24,222 | INFO | Skipping SQL ETL step
+2026-05-21 08:09:24,222 | INFO | START create DWH helper indexes
+2026-05-21 08:21:09,302 | INFO | DONE  create DWH helper indexes in 705.08s
+2026-05-21 08:21:09,302 | INFO | START create/update views
+2026-05-21 08:21:09,386 | INFO | DONE  create/update views in 0.08s
+2026-05-21 08:21:09,386 | INFO | START log PostgreSQL row estimates
+2026-05-21 08:21:09,450 | INFO | DONE  log PostgreSQL row estimates in 0.06s
+2026-05-21 08:21:09,451 | INFO | START run validation.sql
+2026-05-21 08:25:45,841 | INFO | DONE  run validation.sql in 276.39s
+2026-05-21 08:25:45,841 | INFO | Pipeline completed in 992.87s (16.55 minutes)

@@ -1,0 +1,45 @@
+2026-05-21 11:48:33,889 | INFO | log file: logs\paper_results\mining_all_product_9f7d1d4e.log
+2026-05-21 11:48:33,889 | INFO | session_id=all_product_9f7d1d4e
+2026-05-21 11:48:33,890 | INFO | algorithm=all granularity=product min_support=0.01 min_confidence=0.3 workers=8
+2026-05-21 11:48:33,927 | INFO | START prepare basket table
+2026-05-21 11:48:33,927 | INFO | refresh prepared basket table mining_baskets_product
+2026-05-21 11:48:33,946 | INFO | create prepared basket table mining_baskets_product from v_order_product_baskets
+2026-05-21 11:48:57,181 | INFO | DONE  prepare basket table in 23.25s
+2026-05-21 11:48:57,182 | INFO | START load and filter prepared baskets
+2026-05-21 11:48:59,636 | INFO | allowed item universe: 100 items
+2026-05-21 11:49:10,271 | INFO | loaded 1,725,017 baskets for mining
+2026-05-21 11:49:10,272 | INFO | DONE  load and filter prepared baskets in 13.09s
+2026-05-21 11:49:10,272 | INFO | START mining run apriori_product_30ae30d8
+2026-05-21 11:49:10,272 | INFO | START run apriori
+2026-05-21 11:53:15,523 | INFO | DONE  run apriori in 245.25s
+2026-05-21 11:53:15,523 | INFO | START generate apriori association rules
+2026-05-21 11:53:15,524 | INFO | DONE  generate apriori association rules in 0.00s
+2026-05-21 11:53:15,524 | INFO | apriori frequent itemsets: 171
+2026-05-21 11:53:15,524 | INFO | apriori association rules: 10
+2026-05-21 11:53:15,524 | INFO | apriori runtime seconds: 245.25
+2026-05-21 11:53:15,524 | INFO | START save apriori mining results to DWH
+2026-05-21 11:53:15,579 | INFO | DONE  save apriori mining results to DWH in 0.06s
+2026-05-21 11:53:15,580 | INFO | DONE mining run apriori_product_30ae30d8 in 245.25s
+2026-05-21 11:53:15,580 | INFO | START mining run eclat_product_43ae9151
+2026-05-21 11:53:15,580 | INFO | START run eclat
+2026-05-21 11:53:36,316 | INFO | DONE  run eclat in 20.73s
+2026-05-21 11:53:36,316 | INFO | START generate eclat association rules
+2026-05-21 11:53:36,317 | INFO | DONE  generate eclat association rules in 0.00s
+2026-05-21 11:53:36,317 | INFO | eclat frequent itemsets: 171
+2026-05-21 11:53:36,317 | INFO | eclat association rules: 10
+2026-05-21 11:53:36,318 | INFO | eclat runtime seconds: 20.74
+2026-05-21 11:53:36,318 | INFO | START save eclat mining results to DWH
+2026-05-21 11:53:36,338 | INFO | DONE  save eclat mining results to DWH in 0.02s
+2026-05-21 11:53:36,338 | INFO | DONE mining run eclat_product_43ae9151 in 20.74s
+2026-05-21 11:53:36,339 | INFO | START mining run fp_growth_product_6c750725
+2026-05-21 11:53:36,339 | INFO | START run fp_growth
+2026-05-21 11:53:59,622 | INFO | DONE  run fp_growth in 23.28s
+2026-05-21 11:53:59,622 | INFO | START generate fp_growth association rules
+2026-05-21 11:53:59,622 | INFO | DONE  generate fp_growth association rules in 0.00s
+2026-05-21 11:53:59,623 | INFO | fp_growth frequent itemsets: 171
+2026-05-21 11:53:59,623 | INFO | fp_growth association rules: 10
+2026-05-21 11:53:59,623 | INFO | fp_growth runtime seconds: 23.28
+2026-05-21 11:53:59,623 | INFO | START save fp_growth mining results to DWH
+2026-05-21 11:53:59,645 | INFO | DONE  save fp_growth mining results to DWH in 0.02s
+2026-05-21 11:53:59,646 | INFO | DONE mining run fp_growth_product_6c750725 in 23.28s
+2026-05-21 11:53:59,646 | INFO | mining pipeline completed in 325.76s

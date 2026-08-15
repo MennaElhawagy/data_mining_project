@@ -1,0 +1,22 @@
+2026-05-21 07:05:09,149 | INFO | Log file: D:\Study\Data Mining\project\logs\dwh_pipeline_20260521_070509.log
+2026-05-21 07:05:09,149 | INFO | Project root: D:\Study\Data Mining\project
+2026-05-21 07:05:09,150 | INFO | Dataset dir: D:\Study\Data Mining\project\instacart_dataset
+2026-05-21 07:05:09,150 | INFO | Database: postgres@localhost:5432/instacart_dwh
+2026-05-21 07:05:09,150 | INFO | START connect to PostgreSQL
+2026-05-21 07:05:09,228 | ERROR | FAILED connect to PostgreSQL after 0.08s
+Traceback (most recent call last):
+  File "d:\Study\Data Mining\project\pipeline\run_dwh_pipeline.py", line 142, in timed_step
+    yield
+  File "d:\Study\Data Mining\project\pipeline\run_dwh_pipeline.py", line 391, in main
+    conn = connect(args)
+           ^^^^^^^^^^^^^
+  File "d:\Study\Data Mining\project\pipeline\run_dwh_pipeline.py", line 231, in connect
+    conn = psycopg2.connect(
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mohnaser\AppData\Local\Programs\Python\Python312\Lib\site-packages\psycopg2\__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.OperationalError: connection to server at "localhost" (::1), port 5432 failed: fe_sendauth: no password supplied
+
+2026-05-21 07:05:09,257 | ERROR | Pipeline failed: connection to server at "localhost" (::1), port 5432 failed: fe_sendauth: no password supplied
+

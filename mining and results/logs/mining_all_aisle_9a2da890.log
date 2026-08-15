@@ -1,0 +1,10 @@
+2026-05-21 10:58:47,442 | INFO | log file: D:\Study\Data Mining\project\logs\mining_all_aisle_9a2da890.log
+2026-05-21 10:58:47,443 | INFO | session_id=all_aisle_9a2da890
+2026-05-21 10:58:47,443 | INFO | algorithm=all granularity=aisle min_support=0.005 min_confidence=0.3 workers=8
+2026-05-21 10:58:47,511 | INFO | START prepare basket table
+2026-05-21 10:58:47,535 | INFO | DONE  prepare basket table in 0.02s
+2026-05-21 10:58:47,536 | INFO | START load and filter prepared baskets
+2026-05-21 10:58:54,799 | INFO | loaded 3,136,738 baskets for mining
+2026-05-21 10:58:54,799 | INFO | DONE  load and filter prepared baskets in 7.26s
+2026-05-21 10:58:54,799 | INFO | START mining run apriori_aisle_68b4ec1a
+2026-05-21 10:58:54,801 | INFO | START run apriori

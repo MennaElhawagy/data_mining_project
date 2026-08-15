@@ -1,0 +1,22 @@
+2026-05-21 04:02:30,135 | INFO | Log file: C:\Users\tamer\Desktop\etl_and_dwh_impl\logs\dwh_pipeline_20260521_040230.log
+2026-05-21 04:02:30,135 | INFO | Project root: C:\Users\tamer\Desktop\etl_and_dwh_impl
+2026-05-21 04:02:30,135 | INFO | Dataset dir: C:\Users\tamer\Desktop\etl_and_dwh_impl\instacart_dataset
+2026-05-21 04:02:30,135 | INFO | Database: postgres@localhost:5432/instacart_dwh
+2026-05-21 04:02:30,135 | INFO | START connect to PostgreSQL
+2026-05-21 04:02:39,792 | WARNING | Database 'instacart_dwh' does not exist; creating it.
+2026-05-21 04:02:40,130 | INFO | Created database 'instacart_dwh'
+2026-05-21 04:02:40,162 | INFO | DONE  connect to PostgreSQL in 10.03s
+2026-05-21 04:02:40,171 | INFO | START create DWH schema
+2026-05-21 04:02:40,207 | INFO | DONE  create DWH schema in 0.04s
+2026-05-21 04:02:40,209 | INFO | START create/update staging schema
+2026-05-21 04:02:40,223 | INFO | DONE  create/update staging schema in 0.01s
+2026-05-21 04:02:40,225 | INFO | START truncate final DWH tables
+2026-05-21 04:02:40,244 | INFO | DONE  truncate final DWH tables in 0.02s
+2026-05-21 04:02:40,245 | ERROR | Pipeline failed: Missing CSV files:
+C:\Users\tamer\Desktop\etl_and_dwh_impl\instacart_dataset\dataset_files\aisles.csv
+C:\Users\tamer\Desktop\etl_and_dwh_impl\instacart_dataset\dataset_files\departments.csv
+C:\Users\tamer\Desktop\etl_and_dwh_impl\instacart_dataset\dataset_files\products.csv
+C:\Users\tamer\Desktop\etl_and_dwh_impl\instacart_dataset\dataset_files\orders.csv
+C:\Users\tamer\Desktop\etl_and_dwh_impl\instacart_dataset\dataset2_files\orders.csv
+C:\Users\tamer\Desktop\etl_and_dwh_impl\instacart_dataset\dataset_files\order_products__train.csv
+C:\Users\tamer\Desktop\etl_and_dwh_impl\instacart_dataset\dataset_files\order_products__prior.csv

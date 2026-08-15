@@ -1,0 +1,41 @@
+2026-05-21 07:06:19,872 | INFO | Log file: D:\Study\Data Mining\project\logs\dwh_pipeline_20260521_070619.log
+2026-05-21 07:06:19,872 | INFO | Project root: D:\Study\Data Mining\project
+2026-05-21 07:06:19,872 | INFO | Dataset dir: D:\Study\Data Mining\project\instacart_dataset
+2026-05-21 07:06:19,872 | INFO | Database: postgres@localhost:5432/instacart_dwh
+2026-05-21 07:06:19,872 | INFO | START connect to PostgreSQL
+2026-05-21 07:06:28,872 | INFO | DONE  connect to PostgreSQL in 9.00s
+2026-05-21 07:06:28,912 | INFO | public schema tables already exist; skipping schema.sql
+2026-05-21 07:06:28,913 | INFO | START create/update staging schema
+2026-05-21 07:06:28,920 | INFO | DONE  create/update staging schema in 0.01s
+2026-05-21 07:06:28,921 | INFO | START drop staging indexes before COPY
+2026-05-21 07:06:28,962 | INFO | DONE  drop staging indexes before COPY in 0.04s
+2026-05-21 07:06:28,964 | INFO | START truncate staging tables
+2026-05-21 07:06:29,082 | INFO | DONE  truncate staging tables in 0.12s
+2026-05-21 07:06:29,084 | INFO | START COPY aisles.csv -> staging.aisles (0.0 MB)
+2026-05-21 07:06:29,089 | INFO | 
+2026-05-21 07:06:29,089 | INFO | DONE  COPY aisles.csv -> staging.aisles (0.0 MB) in 0.01s
+2026-05-21 07:06:29,089 | INFO | START COPY departments.csv -> staging.departments (0.0 MB)
+2026-05-21 07:06:29,092 | INFO | 
+2026-05-21 07:06:29,093 | INFO | DONE  COPY departments.csv -> staging.departments (0.0 MB) in 0.00s
+2026-05-21 07:06:29,093 | INFO | START COPY products.csv -> staging.products (2.1 MB)
+2026-05-21 07:06:29,252 | INFO | 
+2026-05-21 07:06:29,252 | INFO | DONE  COPY products.csv -> staging.products (2.1 MB) in 0.16s
+2026-05-21 07:06:29,252 | INFO | START COPY orders.csv -> staging.orders (103.9 MB)
+2026-05-21 07:06:52,916 | INFO | 
+2026-05-21 07:06:52,916 | INFO | DONE  COPY orders.csv -> staging.orders (103.9 MB) in 23.66s
+2026-05-21 07:06:52,917 | INFO | START COPY orders.csv -> staging.order_timestamps (108.9 MB)
+2026-05-21 07:07:23,974 | INFO | 
+2026-05-21 07:07:23,975 | INFO | DONE  COPY orders.csv -> staging.order_timestamps (108.9 MB) in 31.06s
+2026-05-21 07:07:23,975 | INFO | START COPY order_products__train.csv -> staging.order_products_train (23.5 MB)
+2026-05-21 07:07:25,417 | INFO | 
+2026-05-21 07:07:25,417 | INFO | DONE  COPY order_products__train.csv -> staging.order_products_train (23.5 MB) in 1.44s
+2026-05-21 07:07:25,417 | INFO | START COPY order_products__prior.csv -> staging.order_products_prior (550.8 MB)
+2026-05-21 07:08:01,462 | INFO | 
+2026-05-21 07:08:01,462 | INFO | DONE  COPY order_products__prior.csv -> staging.order_products_prior (550.8 MB) in 36.04s
+2026-05-21 07:08:01,463 | INFO | START recreate staging indexes
+2026-05-21 07:10:52,059 | INFO | DONE  recreate staging indexes in 170.60s
+2026-05-21 07:10:52,060 | INFO | START drop existing DWH helper indexes before ETL
+2026-05-21 07:10:52,065 | INFO | DONE  drop existing DWH helper indexes before ETL in 0.01s
+2026-05-21 07:10:52,065 | INFO | START run SQL transform/load into DWH
+2026-05-21 08:08:26,601 | INFO | DONE  run SQL transform/load into DWH in 3454.54s
+2026-05-21 08:08:26,602 | INFO | START create DWH helper indexes

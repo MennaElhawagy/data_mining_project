@@ -1,0 +1,13 @@
+2026-05-21 14:14:31,081 | INFO | log file: logs\paper_results\mining_eclat_product_cba54bf7.log
+2026-05-21 14:14:31,081 | INFO | session_id=eclat_product_cba54bf7
+2026-05-21 14:14:31,082 | INFO | algorithm=eclat granularity=product min_support=0.01 min_confidence=0.3 workers=8
+2026-05-21 14:14:31,119 | INFO | START prepare basket table
+2026-05-21 14:14:31,119 | INFO | refresh prepared basket table mining_baskets_product
+2026-05-21 14:14:31,139 | INFO | create prepared basket table mining_baskets_product from v_order_product_baskets
+2026-05-21 14:14:53,225 | INFO | DONE  prepare basket table in 22.11s
+2026-05-21 14:14:53,225 | INFO | START load and filter prepared baskets
+2026-05-21 14:14:58,166 | INFO | allowed item universe: 100 items
+2026-05-21 14:15:12,499 | INFO | loaded 1,725,017 baskets for mining
+2026-05-21 14:15:12,499 | INFO | DONE  load and filter prepared baskets in 19.27s
+2026-05-21 14:15:12,499 | INFO | START mining run eclat_product_6a552f0a
+2026-05-21 14:15:12,500 | INFO | START run eclat

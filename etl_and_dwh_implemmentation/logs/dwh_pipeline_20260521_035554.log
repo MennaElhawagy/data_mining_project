@@ -1,0 +1,22 @@
+2026-05-21 03:55:54,273 | INFO | Log file: C:\Users\tamer\Desktop\etl_and_dwh_impl\logs\dwh_pipeline_20260521_035554.log
+2026-05-21 03:55:54,274 | INFO | Project root: C:\Users\tamer\Desktop\etl_and_dwh_impl
+2026-05-21 03:55:54,275 | INFO | Dataset dir: C:\Users\tamer\Desktop\etl_and_dwh_impl\instacart_dataset
+2026-05-21 03:55:54,275 | INFO | Database: postgres@localhost:5432/instacart_dwh
+2026-05-21 03:55:54,275 | INFO | START connect to PostgreSQL
+2026-05-21 03:56:15,989 | ERROR | FAILED connect to PostgreSQL after 21.71s
+Traceback (most recent call last):
+  File "C:\Users\tamer\Desktop\etl_and_dwh_impl\pipeline\run_dwh_pipeline.py", line 137, in timed_step
+    yield
+  File "C:\Users\tamer\Desktop\etl_and_dwh_impl\pipeline\run_dwh_pipeline.py", line 386, in main
+    conn = connect(args)
+           ^^^^^^^^^^^^^
+  File "C:\Users\tamer\Desktop\etl_and_dwh_impl\pipeline\run_dwh_pipeline.py", line 226, in connect
+    conn = psycopg2.connect(
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\tamer\Desktop\etl_and_dwh_impl\pipeline\.venv\Lib\site-packages\psycopg2\__init__.py", line 135, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.OperationalError: connection to server at "localhost" (::1), port 5432 failed: FATAL:  database "instacart_dwh" does not exist
+
+2026-05-21 03:56:15,992 | ERROR | Pipeline failed: connection to server at "localhost" (::1), port 5432 failed: FATAL:  database "instacart_dwh" does not exist
+

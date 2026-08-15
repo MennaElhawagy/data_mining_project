@@ -1,0 +1,11 @@
+2026-05-21 14:02:28,802 | INFO | log file: logs\paper_results\mining_all_product_93fd6dc7.log
+2026-05-21 14:02:28,802 | INFO | session_id=all_product_93fd6dc7
+2026-05-21 14:02:28,803 | INFO | algorithm=all granularity=product min_support=0.003 min_confidence=0.3 workers=8
+2026-05-21 14:02:28,860 | INFO | START prepare basket table
+2026-05-21 14:02:28,875 | INFO | DONE  prepare basket table in 0.02s
+2026-05-21 14:02:28,876 | INFO | START load and filter prepared baskets
+2026-05-21 14:02:32,090 | INFO | allowed item universe: 500 items
+2026-05-21 14:02:44,218 | INFO | loaded 2,404,713 baskets for mining
+2026-05-21 14:02:44,218 | INFO | DONE  load and filter prepared baskets in 15.34s
+2026-05-21 14:02:44,226 | INFO | START mining run apriori_product_e5e36508
+2026-05-21 14:02:44,226 | INFO | START run apriori
