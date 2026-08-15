@@ -13,6 +13,11 @@ env/
 # Local tooling
 .claude/
 
+# Personal documents - must never be published
+*cv*.docx
+*CV*.docx
+~$*
+
 # OS
 Thumbs.db
 .DS_Store
